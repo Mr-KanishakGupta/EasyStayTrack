@@ -1,0 +1,33 @@
+# Ignore backend and frontend node_modules
+node_modules/
+backend/node_modules/
+frontend/*/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/*/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Backup files
+*.bak
