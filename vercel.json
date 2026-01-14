@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "frontend/snug-place-refresh-main/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "frontend/snug-place-refresh-main/dist"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "frontend/snug-place-refresh-main/dist/$1"
+        }
+    ]
+}
